@@ -10,12 +10,15 @@
     <section class="page-section clearfix">
       <div class="container">
         <div class="card" style="width: 17rem; background-color: #323232;">
-          <a href="#">
             <img class="intro-img img-fluid mb-3 mb-lg-0 rounded" src="{{post.imagen.url}}" alt="">
-          </a>
+
             <div class="card-body">
               <h5 class="card-title" style="color: white;">{{post.titulo}}</h5>
               <p class="card-text" style="color: white;">{{post.contenido}}</p>
+            </div>
+
+            <div style="text-align: left; margin-left:22px; color: white; font-size: 0.8em;">
+              Autor: {{post.autor}}
             </div>
         </div>
       </div>
