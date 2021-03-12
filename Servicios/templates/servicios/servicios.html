@@ -4,40 +4,46 @@
 
 {% block content %}
 
-    {% for servicio in servicios %}
-      <br>
+<style>
 
-      <style>
+  #cajas{
+    padding: 2px; 
+    background-color:black;
+    margin: 20px 20px; 
+    color: white;
+    width: 100%;
+  }
 
-        figure img{
-          padding: 4px;
-          background: #323232;
-          
-        }
+  #cajas:hover{
+    transform: scale(1.1);
+  }
 
-        #cajas:hover{
-          transform: scale(1.2);
+</style>
 
-        }
+<div class="container">
+<div class="row">
+    
+  {% for servicio in servicios %}
 
-      </style>
-      
-      <section>
-        <div class="card" id="cajas" style="width: 20%; float: left; margin: 20px;">
+    <div class="col-md-3">
 
-          <figure>
-            <img class="card-img-top" src="{{servicio.imagen.url}}" alt="Card image cap">
-          </figure>
-        
+      <div class="card" id="cajas">
+
+          <img src="{{servicio.imagen.url}}" class="card-img-top">
+
           <div class="card-body">
             <h5 class="card-title">{{servicio.titulo}}</h5>
             <p class="card-text">{{servicio.contenido}}</p>
           </div>
-        </div>
-      </section>
 
-    {% endfor %}
+      </div>
 
-    <div style="clear: both;"></div>
+    </div>
+
+  {% endfor %}
+
+  </div>
+
+</div>
 
 {% endblock %}
