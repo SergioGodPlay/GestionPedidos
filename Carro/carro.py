@@ -1,4 +1,3 @@
-
 class Carro:
     def __init__(self, request):
 
@@ -10,9 +9,9 @@ class Carro:
 
             carro = self.session["carro"] = {}
 
-        else:
+        #else:
 
-            self.carro = carro
+        self.carro = carro
 
 
     def agregar(self, producto):
@@ -25,7 +24,7 @@ class Carro:
                 "nombre":producto.nombre,
                 "precio":str(producto.precio),
                 "cantidad":1,
-                "imagen":producto.imagen.url()
+                #"imagen":producto.imagen.url()
             }
 
         else:

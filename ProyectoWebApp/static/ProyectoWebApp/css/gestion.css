@@ -292,3 +292,30 @@ ul.errorlist{
     border-radius: 7px;
     padding: 10px;
 }
+
+#cajasTienda{
+  padding: 2px; 
+  background-color:black;
+  margin: 20px 20px; 
+  color: white;
+  width: 109%;
+}
+
+#cajasServicios{
+  padding: 2px; 
+  background-color:black;
+  margin: 20px 20px; 
+  color: white;
+  width: 105%;
+}
+
+#cajasServicios:hover{
+  transform: scale(1.1);
+}
+
+#carrocompras{
+  padding: 2px;
+  margin: 20px 30px;
+  color: rgb(206, 201, 201);
+  
+}
